@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jadwal Kuliah</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Jadwal Kuliah by @xh_ull</h1>
+    </header>
+    <main>
+      <section class="filter">
+        <label for="day-filter">Pilih Hari:</label>
+        <select id="day-filter">
+          <option value="all">Semua</option>
+          <option value="senin">Senin</option>
+          <option value="selasa">Selasa</option>
+          <option value="rabu">Rabu</option>
+          <option value="kamis">Kamis</option>
+          <option value="jumat">Jumat</option>
+        </select>
+      </section>
+      <section class="schedule">
+        <table>
+          <thead>
+            <tr>
+              <th>Hari</th>
+              <th>Waktu</th>
+              <th>Mata Kuliah</th>
+              <th>Ruangan</th>
+            </tr>
+          </thead>
+          <tbody id="schedule-body">
+            <tr data-day="senin">
+              <td>Senin</td>
+              <td>kosong</td>
+              <td>kosong</td>
+              <td>kosong</td>
+            </tr>
+            <tr data-day="selasa">
+              <td>Selasa</td>
+              <td>kosong</td>
+              <td>kosong</td>
+              <td>kosong</td>
+            </tr>
+            <tr data-day="rabu">
+              <td>Rabu</td>
+              <td>07:30 - 10:00</td>
+              <td>Pengantar Ekonomi Mikro</td>
+              <td>B-204</td>
+            </tr>
+            <tr data-day="rabu">
+              <td>Rabu</td>
+              <td>10:15 - 12:45</td>
+              <td>Pengantar Bisnis</td>
+              <td>B-401</td>
+            </tr>
+            <tr data-day="rabu">
+              <td>Rabu</td>
+              <td>13:15 - 15:45</td>
+              <td>Matematika Bisnis</td>
+              <td>B-204</td>
+            </tr>
+            <tr data-day="kamis">
+              <td>Kamis</td>
+              <td>07:30 - 10:00</td>
+              <td>Pengantar Akuntansi</td>
+              <td>B-304</td>
+            </tr>
+            <tr data-day="kamis">
+              <td>Kamis</td>
+              <td>10:15 - 11:45</td>
+              <td>Bahasa Inggris</td>
+              <td>E-507</td>
+            </tr>
+            <tr data-day="jumat">
+              <td>Jumat</td>
+              <td>07:30 - 09:10</td>
+              <td>Bahasa Indonesia</td>
+              <td>B-303</td>
+            </tr>
+            <tr data-day="jumat">
+              <td>Jumat</td>
+              <td>09:30 - 11:10</td>
+              <td>PAK dan Etik UMB</td>
+              <td>B-203</td>
+            </tr>
+            <tr data-day="jumat">
+              <td>Jumat</td>
+              <td>14:00 - 15:40</td>
+              <td>Pancasila</td>
+              <td>B-202</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
